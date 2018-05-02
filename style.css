@@ -1,0 +1,50 @@
+header {
+  background: radial-gradient(circle at bottom center, red, yellow);
+  color: white;
+  font-family: "Joti One", cursive, sans-serif;
+  font-size: 32px;
+  text-align: center;
+  width: 100vw;
+  height: 50vh;
+}
+body{
+	padding: 0;
+	margin: 0;
+}
+header h1 {
+  padding-top: 100px;
+  margin: 0;
+}
+h2 {
+  text-decoration-color: red;
+  text-align: center;
+}
+nav{
+	background: black;
+	padding: 0 10px;
+}
+nav a{
+	color:#ccc;
+	display: inline-block;
+	font-weight: 850;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+nav a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+nav a:hover{
+	color:white;
+
+}
+a:visited{
+	text-decoration-color: black;
+}
+a{
+	text-decoration-color: black;
+}
+a:hover{
+	text-decoration-color: black;
+}
