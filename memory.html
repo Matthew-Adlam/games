@@ -23,12 +23,11 @@ div#memory_board > div{
 }
 </style>
 <script>
-// Scripted By Adam Khoury in connection with the following video tutorial:
-// http://www.youtube.com/watch?v=c_ohDPWmsM0
 var memory_array = ['A','A','B','B','C','C','D','D','E','E','F','F','G','G','H','H','I','I','J','J','K','K','L','L'];
 var memory_values = [];
 var memory_tile_ids = [];
 var tiles_flipped = 0;
+var turns = 0;
 Array.prototype.memory_tile_shuffle = function(){
     var i = this.length, j, temp;
     while(--i > 0){
@@ -64,7 +63,7 @@ function memoryFlipTile(tile,val){
             	memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array.length){
-					alert("Board cleared... generating new board");
+					alert("Board cleared... generating new board, you took" + turns + "turns!");
 					document.getElementById('memory_board').innerHTML = "";
 					newBoard();
 				}
@@ -80,6 +79,7 @@ function memoryFlipTile(tile,val){
 				    // Clear both arrays
 				    memory_values = [];
             	    memory_tile_ids = [];
+					turns = turns + 1;
 				}
 				setTimeout(flip2Back, 700);
 			}
@@ -91,5 +91,11 @@ function memoryFlipTile(tile,val){
 <body>
 <div id="memory_board"></div>
 <script>newBoard();</script>
+<br><br><br>
+<h2> Instructions:</h2>
+<br><br>
+<p> Use the mouse to click on a tile, then another. If they match, then you get the pair. If they do not, go again. Get all the pairs to win!
+	This is not a original game. I made it to improve my skills, not take any credit.
+</p>
 </body>
 </html>
