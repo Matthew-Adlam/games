@@ -52,3 +52,7 @@ a:hover{
 p{
 align:center;
 }
+aside{
+  display: block;
+  float: right;
+}
