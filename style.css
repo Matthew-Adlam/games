@@ -50,9 +50,23 @@ a:hover{
 	text-decoration-color: black;
 }
 p{
-align:center;
+text-align:center;
 }
 aside{
   display: block;
   float: right;
+}
+footer{
+  height:200px;
+  border-color: darkorange;
+  background-color: #eee;
+  border-width: 5px;
+  border-bottom-color: black;
+  border-color: black;
+  text-align: center;
+  text-decoration-color:  red;
+  text-decoration: none;
+}
+a href{
+  text-align:center;
 }
