@@ -8,14 +8,19 @@ header {
   height: 50vh;
 }
 body{
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin:0;
 }
 header h1 {
   padding-top: 100px;
   margin: 0;
 }
 h2 {
+  text-decoration-color: red;
+  text-align: center;
+  color: red;
+}
+h3 {
   text-decoration-color: red;
   text-align: center;
   color: red;
@@ -69,4 +74,8 @@ footer{
 }
 a href{
   text-align:center;
+}
+iframe{
+  display: center;
+  border: 5px;
 }
