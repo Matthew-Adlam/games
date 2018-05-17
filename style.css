@@ -94,3 +94,16 @@ iframe {
   display: center;
   border: 5px;
 }
+
+.image-grid {
+  list-style: none;
+}
+
+.image-grid li {
+  display: inline-block;
+  margin: 0.2rem;
+}
+
+.image-grid a {
+  text-decoration: none;
+}
