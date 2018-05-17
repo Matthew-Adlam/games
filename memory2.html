@@ -52,6 +52,7 @@ var memory_values = [];
 var memory_tile_ids = [];
 var tiles_flipped = 0;
 var turns = 0;
+var score = 15;
 Array.prototype.memory_tile_shuffle = function(){
     var i = this.length, j, temp;
     while(--i > 0){
@@ -62,6 +63,7 @@ Array.prototype.memory_tile_shuffle = function(){
     }
 }
 function newBoard(){
+    score = 15;
 	tiles_flipped = 0;
 	var output = '';
     memory_array.memory_tile_shuffle();
@@ -100,11 +102,15 @@ function memoryFlipTile(tile,val){
             	    tile_1.innerHTML = "";
 				    tile_2.style.background = 'url(tile_bg.jpg) no-repeat';
             	    tile_2.innerHTML = "";
-                    score = score - 1;
-				    // Clear both arrays
+				    score = score - 1;
+                    // Clear both arrays
 				    memory_values = [];
             	    memory_tile_ids = [];
 					turns = turns + 1;
+                    if(score = 0 || score < 0) {
+                        alert("GAME OVER, YOU LOSE")
+                        newBoard();
+                    }
 				}
 				setTimeout(flip2Back, 700);
 			}
@@ -119,7 +125,7 @@ function memoryFlipTile(tile,val){
 <br><br><br>
 <h2> Instructions:</h2>
 <br><br>
-<p> Use the mouse to click on a tile, then another. If they match, then you get the pair. If they do not, go again. Get all the pairs to win!
+<p> This is a different memory game. Start with 15 points, you lose 1 for not matching a pair. You lose if you have 0 points, win if you have 10.
 	This is not a original game. I made it to improve my skills, not take any credit.
 </p>
 <aside>
