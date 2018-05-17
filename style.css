@@ -55,11 +55,13 @@ main {
 }
 
 section {
+  flex-grow: 1;
   padding: 2rem 5vw;
 }
 
 aside img {
   width: 30vw;
+  max-width: 400px;
 }
 
 a:visited {
