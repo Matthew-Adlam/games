@@ -1,17 +1,19 @@
 header {
   background: radial-gradient(circle at bottom center, red, yellow);
   color: white;
-  font-family: "Joti One", cursive, sans-serif;
+  font-family: 'Joti One', cursive, sans-serif;
   font-size: 32px;
   text-align: center;
   width: 100vw;
   height: 50vh;
 }
-body{
+
+body {
   padding: 0;
-  margin:0;
+  margin: 0;
   font-family: Arial, sans-serif;
 }
+
 header h1 {
   padding-top: 100px;
   margin: 0;
@@ -26,57 +28,82 @@ h3 {
   text-align: center;
   color: red;
 }
-nav{
-	background: black;
-	padding: 0 10px;
+
+nav {
+  background: black;
+  padding: 0 10px;
 }
-nav a{
-	color:#ccc;
-	display: inline-block;
-	font-weight: 850;
-	padding: 5px 10px;
-	text-decoration: none;
+nav a {
+  color: #ccc;
+  display: inline-block;
+  font-weight: 850;
+  padding: 5px 10px;
+  text-decoration: none;
 }
 nav a:visited {
   color: white;
   background-color: transparent;
   text-decoration: none;
 }
-nav a:hover{
-	color:white;
+nav a:hover {
+  color: white;
+}
 
+main {
+  display: flex;
+  flex-direction: row;
 }
-a:visited{
-	text-decoration-color: black;
+
+section {
+  flex-grow: 1;
+  padding: 2rem 5vw;
 }
-a{
-	text-decoration-color: black;
+
+aside img {
+  width: 30vw;
+  max-width: 400px;
 }
-a:hover{
-	text-decoration-color: black;
+
+a:visited {
+  text-decoration-color: black;
 }
-p{
-text-align:center;
+a {
+  text-decoration-color: black;
 }
-aside{
-  display: block;
-  float: right;
+a:hover {
+  text-decoration-color: black;
 }
-footer{
-  height:200px;
+
+p {
+  text-align: center;
+}
+
+footer {
+  height: 200px;
   border-color: darkorange;
   background-color: #eee;
   border-width: 5px;
   border-bottom-color: black;
   border-color: black;
   text-align: center;
-  text-decoration-color:  red;
+  text-decoration-color: red;
   text-decoration: none;
 }
-a href{
-  text-align:center;
-}
-iframe{
+
+iframe {
   display: center;
   border: 5px;
+}
+
+.image-grid {
+  list-style: none;
+}
+
+.image-grid li {
+  display: inline-block;
+  margin: 0.2rem;
+}
+
+.image-grid a {
+  text-decoration: none;
 }
