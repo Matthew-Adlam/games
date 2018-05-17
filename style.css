@@ -49,6 +49,19 @@ nav a:hover {
   color: white;
 }
 
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+section {
+  padding: 2rem 5vw;
+}
+
+aside img {
+  width: 30vw;
+}
+
 a:visited {
   text-decoration-color: black;
 }
@@ -61,11 +74,6 @@ a:hover {
 
 p {
   text-align: center;
-}
-
-aside {
-  display: block;
-  float: right;
 }
 
 footer {
