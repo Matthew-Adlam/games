@@ -113,3 +113,6 @@ align:center;
 text-decoration:none;
 
 }
+imgNeedBorder {
+border: 1px solid;
+}  
